@@ -58,3 +58,5 @@ cd EcoSort-AI
 - npm install
 - npm start
 
+## DATA SET TRAINED IMAGE LINK
+https://drive.google.com/drive/folders/1-C784rPkDUhgwTd8Toy-Kcxdiclrc4cO
