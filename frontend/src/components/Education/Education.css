@@ -1,0 +1,138 @@
+.education-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.education-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.education-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a202c;
+}
+
+.education-header p {
+  color: #4a5568;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .education-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.education-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-image {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.blue-gradient {
+  background: linear-gradient(to right, #3b82f6, #06b6d4);
+}
+
+.green-gradient {
+  background: linear-gradient(to right, #22c55e, #10b981);
+}
+
+.purple-gradient {
+  background: linear-gradient(to right, #8b5cf6, #6366f1);
+}
+
+.orange-gradient {
+  background: linear-gradient(to right, #f97316, #ef4444);
+}
+
+.pink-gradient {
+  background: linear-gradient(to right, #ec4899, #f43f5e);
+}
+
+.yellow-gradient {
+  background: linear-gradient(to right, #facc15, #f59e0b);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #2563eb;
+  background: #dbeafe;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.time {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.card-content h3 {
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  color: #4b5563;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(to right, #22c55e, #3b82f6);
+  color: white;
+  padding: 0.6rem;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.read-more:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}

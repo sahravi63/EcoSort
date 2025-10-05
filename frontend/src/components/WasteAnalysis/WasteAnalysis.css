@@ -1,0 +1,290 @@
+/* Container */
+.wa-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.wa-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wa-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+}
+
+.wa-header p {
+  color: #666;
+}
+
+/* Upload Section */
+.wa-upload-card {
+  background: #fff;
+  border: 2px dashed #86efac;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.wa-camera-icon {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(to right, #22c55e, #3b82f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons */
+.wa-btn-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.wa-btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  width: auto;
+}
+
+.wa-btn-primary {
+  background: linear-gradient(to right, #22c55e, #3b82f6);
+  color: #fff;
+  border: none;
+}
+
+.wa-btn-outline {
+  background: #fff;
+  border: 2px solid #22c55e;
+  color: #15803d;
+}
+
+.wa-btn:hover {
+  opacity: 0.9;
+}
+
+/* Optional override styles for .wa-btn.wa-btn-primary */
+.wa-btn.wa-btn-primary {
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Tips Box */
+.wa-tips {
+  margin-top: 20px;
+  background: linear-gradient(to right, #dcfce7, #dbeafe);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.wa-tips h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.wa-tips ul {
+  font-size: 14px;
+  color: #333;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Spinner for analyzing */
+.wa-analyzing {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.wa-spinner {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #22c55e;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Media Preview */
+.wa-preview {
+  margin-top: 20px;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Analysis Grid */
+.wa-analysis-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.wa-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .wa-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wa-img-card img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Result Cards */
+.wa-result-card {
+  border-radius: 14px;
+  padding: 20px;
+  color: black;
+  margin-bottom: 16px;
+}
+
+.wa-result-card.green {
+  background: linear-gradient(to right, #22c55e, #16a34a);
+}
+
+.wa-result-card.yellow {
+  background: linear-gradient(to right, #f59e0b, #facc15);
+}
+
+.wa-result-card.orange {
+  background: linear-gradient(to right, #f97316, #ef4444);
+}
+
+.wa-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wa-voice-btn {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.wa-category {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.wa-confidence {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* Info Cards */
+.wa-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.wa-card.green {
+  background: #ecfdf5;
+  border-color: #86efac;
+}
+
+.wa-card.blue {
+  background: #eff6ff;
+  border-color: #93c5fd;
+}
+
+.wa-card h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.icon-green {
+  color: #22c55e;
+}
+
+.icon-blue {
+  color: #3b82f6;
+}
+
+/* Actions */
+.wa-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.wa-actions .wa-btn {
+  flex: 1;
+}
+
+/* Media card (image/video) */
+.wa-media-card {
+  position: relative;
+  width: 100%;
+}
+
+/* Bounding boxes */
+.wa-bbox {
+  position: absolute;
+  border: 2px solid red;
+  background: rgba(255, 0, 0, 0.2);
+  pointer-events: none;
+  font-size: 12px;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.wa-bbox-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 0, 0, 0.7);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  pointer-events: none;
+}
