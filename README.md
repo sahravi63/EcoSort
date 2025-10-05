@@ -1,40 +1,45 @@
-# EcoSort AI:Intelligent Waste Analyzer & Educator
-### Features
+# 🌍 EcoSort AI: Intelligent Waste Analyzer & Educator
 
-- Waste Detection & Classification – Detects and classifies waste types from images and videos.
+EcoSort AI is an **AI-powered waste management and education system** designed to detect, classify, and educate users about proper waste disposal through **AI-driven analysis, interactive chatbot support, gamification, and educational feedback**.
 
-- Personalized Education – Eco-friendly disposal tips via text and audio.
+---
 
-- Interactive Chatbot – Answers recycling queries in real-time.
+## 🚀 Features
 
-- Gamification – Points, badges, and leaderboard to encourage eco-friendly actions.
+- ♻️ **Waste Detection & Classification** – Identifies and classifies waste (plastic, paper, metal, organic, etc.) from **images and videos** using deep learning.
+- 🧠 **Personalized Education** – Provides **eco-friendly disposal tips** via **text and audio**.
+- 💬 **Interactive Chatbot** – Real-time **AI chatbot** answers recycling and sustainability-related questions.
+- 🏆 **Gamification Engine** – Earn **points, badges, and leaderboard positions** for correct actions and eco-friendly participation.
+- 🔁 **User Feedback Loop** – Users can mark model predictions as correct/incorrect to **improve dataset quality** and model performance.
+- 🗣️ **Voice & Multimodal Support** – Integrated **Text-to-Speech (TTS)** and optional **Speech-to-Text (STT)** for accessibility.
+- 📊 **Analytics & Admin Dashboard** – Track system usage, accuracy rates, and top waste categories.
+- ☁️ **Deployment-Ready** – Optimized for **cloud or Docker** environments.
+- 🔮 **Future Roadmap** – Integration with **AR-enabled smart bins**, **IoT sensors**, and **eco-reward systems**.
 
-- User Feedback Loop – Correct/incorrect predictions enhance the dataset and AI model.
+---
 
-- Voice & Multimodal Support – Text-to-Speech (TTS) for instructions; optional Speech-to-Text (STT) for chatbot.
+## 🧩 Tech Stack
 
-- Analytics & Admin Dashboard – Monitor usage stats, common waste types, and AI accuracy.
+| Layer | Technologies |
+|--------|---------------|
+| **Backend** | FastAPI, Python, MySQL |
+| **Frontend** | React.js |
+| **AI/ML** | PyTorch, OpenCV, Transformers, Scikit-learn |
+| **Audio/Video Processing** | MoviePy, gTTS, SpeechRecognition |
+| **Database** | MySQL (or MariaDB) |
+| **Deployment** | Docker (optional), Cloud-ready |
 
-- Deployment-ready – Designed for cloud or Docker deployment.
+---
 
-- Future Roadmap – AR-enabled smart bins, rewards integration, IoT-connected bins.
-
-## Tech Stack
-
-- Backend: FastAPI, Python, MySQL
-
-- Frontend: React.js
-
-- AI/ML: PyTorch, OpenCV, Transformers, Scikit-learn
-
-- Audio/Video: MoviePy, gTTS, SpeechRecognition
-
-- Database: MySQL (or MariaDB)
-
-- Deployment: Docker (optional), Cloud-ready
 
 
 1️⃣ Install Dependencies
+
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/sahravi63/EcoSort.git
+cd EcoSort-AI
 
 - pip install -r requirements.txt
 
