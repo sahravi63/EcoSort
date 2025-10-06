@@ -146,70 +146,76 @@ const MainApp = ({ user, setUser }) => {
   };
 
   return (
-    <div className="app-container">
-      {/* Header */}
-      <header className="app-header">
-        <div className="app-header-inner">
-          <div className="app-logo">
-            <div className="logo-icon">
-              <Leaf className="text-white" size={24} />
-            </div>
-            <div>
-              <h1 className="logo-title">EcoSort AI</h1>
-              <p className="logo-subtitle">Intelligent Waste Analyzer</p>
-            </div>
-          </div>
+  <div className="app-container">
+    {/* Dummy Header */}
+    <div className="dummy-header">
+      🌍 Welcome to EcoSort AI — Making Waste Sorting Smarter!
+    </div>
 
-          <div className="app-header-user">
-            {user && (
-              <>
-                <div className="points">
-                  <Star className="text-yellow-500" size={16} />
-                  <span>{user.points}</span>
-                </div>
-                <div className="user-avatar">
-                  <User className="text-white" size={16} />
-                </div>
-              </>
-            )}
+    {/* Header */}
+    <header className="app-header">
+      <div className="app-header-inner">
+        <div className="app-logo">
+          <div className="logo-icon">
+            <Leaf className="text-white" size={24} />
+          </div>
+          <div>
+            <h1 className="logo-title">EcoSort AI</h1>
+            <p className="logo-subtitle">Intelligent Waste Analyzer</p>
           </div>
         </div>
-      </header>
 
-      <div className="flex">
-        {/* Sidebar */}
-        <nav className="sidebar">
-          <div className="sidebar-buttons">
-            {[
-              { id: "home", label: "Dashboard", icon: Home },
-              { id: "camera", label: "Analyze Waste", icon: Camera },
-              { id: "education", label: "Learn & Tips", icon: BookOpen },
-              { id: "chat", label: "AI Assistant", icon: MessageCircle },
-              { id: "leaderboard", label: "Leaderboard", icon: Trophy },
-              { id: "profile", label: "Profile", icon: User },
-            ].map((item) => {
-              const Icon = item.icon;
-              return (
-                <button
-                  key={item.id}
-                  onClick={() => setCurrentView(item.id)}
-                  className={`sidebar-button ${
-                    currentView === item.id ? "active" : ""
-                  }`}
-                >
-                  <Icon size={20} />
-                  <span>{item.label}</span>
-                </button>
-              );
-            })}
-          </div>
-        </nav>
-
-        {/* Main Content */}
-        <main className="main-content">{renderContent()}</main>
+        <div className="app-header-user">
+          {user && (
+            <>
+              <div className="points">
+                <Star className="text-yellow-500" size={16} />
+                <span>{user.points}</span>
+              </div>
+              <div className="user-avatar">
+                <User className="text-white" size={16} />
+              </div>
+            </>
+          )}
+        </div>
       </div>
+    </header>
+
+    <div className="flex">
+      {/* Sidebar */}
+      <nav className="sidebar">
+        <div className="sidebar-buttons">
+          {[
+            { id: "home", label: "Dashboard", icon: Home },
+            { id: "camera", label: "Analyze Waste", icon: Camera },
+            { id: "education", label: "Learn & Tips", icon: BookOpen },
+            { id: "chat", label: "AI Assistant", icon: MessageCircle },
+            { id: "leaderboard", label: "Leaderboard", icon: Trophy },
+            { id: "profile", label: "Profile", icon: User },
+          ].map((item) => {
+            const Icon = item.icon;
+            return (
+              <button
+                key={item.id}
+                onClick={() => setCurrentView(item.id)}
+                className={`sidebar-button ${
+                  currentView === item.id ? "active" : ""
+                }`}
+              >
+                <Icon size={20} />
+                <span>{item.label}</span>
+              </button>
+            );
+          })}
+        </div>
+      </nav>
+
+      {/* Main Content */}
+      <main className="main-content">{renderContent()}</main>
     </div>
-  );
+  </div>
+);
+
 };
 
 export default MainApp;
